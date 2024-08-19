@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 3.5em; /* Font size for the header */
+        }
+        .word {
+            opacity: 0;
+            display: inline-block;
+            animation: fade-in 1s forwards;
+        }
+        .word:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .word:nth-child(2) {
+            animation-delay: 1s;
+        }
+        .word:nth-child(3) {
+            animation-delay: 2s;
+        }
+        .word:nth-child(4) {
+            animation-delay: 3s;
+        }
+        .word:nth-child(5) {
+            animation-delay: 4s;
+        }
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+        section {
+            padding: 20px;
+            font-size: 2em; /* Font size for section text */
+            position: relative; /* Make section the reference point for the image */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* CSS for image alignment */
+        img {
+            width: 750px; /* Adjust the size */
+            height: auto; /* Maintain aspect ratio */
+            position: absolute; /* Position the image absolutely */
+            top: 0; /* Align the image with the top of the section */
+            right: 0; /* Align the image with the right side */
+            margin: 20px; /* Add some space from the edges */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <span class="word">Welcome</span>
+            <span class="word">to</span>
+            <span class="word">my</span>
+            <span class="word">webpage</span>
+        </h1>
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <p>Hi, I’m Ritish Kumar, this is my webpage</p>
+        <p>I'm doing my Ph.D. in astronomy from <a href="https://www.cuhimachal.ac.in" target="_blank">Central University of Himachal Pradesh</a></p>
+        <p><strong>My Research Interest Includes:</strong></p>
+        <ul>
+            <li>Quasars Astronomy</li>
+            <li>SED Modeling</li>
+            <li>Circum-Galactic Medium (CGM)</li>
+            <li>Intergalactic Medium (IGM) & Cosmology</li>
+        </ul>
+        <p><strong>My Contribution in the Field:</strong></p>
+        <ul>
+            <li>Evidence of underdeveloped torus and broad-line region of weak emission line quasars based on their spectral energy distribution, Kumar R., Chand H., Joshi R., 2023, <a href="https://academic.oup.com/mnras/article/519/3/3656/6918854" target="_blank">MNRAS, 519, 3656</a>.</li>
+        </ul>
+        <p><strong>Current Projects:</strong></p>
+        <ul>
+            <li>Understanding the difference between the nature of accretion disk of Weak emission line Quasars and normal Quasars</li>
+            <li>Do there exist radio-quiet counterpart of BL Lac objects?</li>
+            <li>Extreme outflows in AGNs and associated systems </li>
+            <li>Does True Type-II AGNs exits?</li>
+        </ul>
+        <img src="ritish_prof.jpeg" alt="A description of the image">
+    </section>
+    <section>
+        <h2>Achiements</h2>
+        <p>Gate Qualified 2019, 2020</p>
+        <p>  <p>
+    </section>
+    <footer>
+        <p>© 2024 Ritish Kumar. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
