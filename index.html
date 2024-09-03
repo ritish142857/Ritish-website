@@ -11,52 +11,43 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-
         header {
             background-color: #4CAF50;
             color: white;
             padding: 10px 0;
             text-align: center;
-            font-size: 2.5em; /* Adjusted size for better responsiveness */
+            font-size: 3.5em; /* Font size for the header */
         }
-
         .word {
             opacity: 0;
             display: inline-block;
             animation: fade-in 1s forwards;
         }
-
         .word:nth-child(1) {
             animation-delay: 0s;
         }
-
         .word:nth-child(2) {
             animation-delay: 1s;
         }
-
         .word:nth-child(3) {
             animation-delay: 2s;
         }
-
         .word:nth-child(4) {
             animation-delay: 3s;
         }
-
         .word:nth-child(5) {
             animation-delay: 4s;
         }
-
         @keyframes fade-in {
             to {
                 opacity: 1;
             }
         }
-
         section {
             padding: 20px;
-            font-size: 1.2em; /* Adjusted for smaller screens */
+            font-size: 2em; /* Font size for section text */
+            position: relative; /* Make section the reference point for the image */
         }
-
         footer {
             background-color: #333;
             color: white;
@@ -66,29 +57,14 @@
             width: 100%;
             bottom: 0;
         }
-
-        /* Responsive image */
+        /* CSS for image alignment */
         img {
-            width: 100%; /* Make the image responsive */
-            max-width: 600px; /* Limit the maximum size */
+            width: 600px; /* Adjust the size */
             height: auto; /* Maintain aspect ratio */
-            display: block;
-            margin: 20px auto; /* Center the image */
-        }
-
-        /* Media queries for smaller devices */
-        @media (max-width: 600px) {
-            header {
-                font-size: 1.8em; /* Smaller header font size for phones */
-            }
-
-            section {
-                font-size: 1em; /* Smaller section text */
-            }
-
-            footer {
-                font-size: 0.9em; /* Adjust footer text size */
-            }
+            position: absolute; /* Position the image absolutely */
+            top: 0; /* Align the image with the top of the section */
+            right: 0; /* Align the image with the right side */
+            margin: 20px; /* Add some space from the edges */
         }
     </style>
 </head>
@@ -126,8 +102,9 @@
         <img src="ritish_prof.jpeg" alt="A description of the image">
     </section>
     <section>
-        <h2>Achievements</h2>
+        <h2>Achiements</h2>
         <p>Gate Qualified 2019, 2020</p>
+        <p>  <p>
     </section>
     <footer>
         <p>© 2024 Ritish Kumar. All Rights Reserved.</p>
